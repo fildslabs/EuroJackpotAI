@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">EuroJackpot AI</string>
+
+    <string name="nav_home">홈</string>
+    <string name="nav_generate">번호 생성</string>
+    <string name="nav_statistics">통계</string>
+    <string name="nav_my_numbers">내 번호</string>
+    <string name="nav_results">결과</string>
+
+    <string name="common_main_numbers">메인</string>
+    <string name="common_euro_numbers">유로</string>
+    <string name="common_last_updated">마지막 업데이트: %1$s</string>
+    <string name="common_retry">다시 시도</string>
+    <string name="common_save">저장</string>
+    <string name="common_cancel">취소</string>
+    <string name="common_delete">삭제</string>
+    <string name="common_edit">수정</string>
+    <string name="common_close">닫기</string>
+    <string name="common_loading">불러오는 중…</string>
+    <string name="common_error_generic">문제가 발생했어요. 저장된 데이터는 안전합니다.</string>
+    <string name="common_offline_notice">오프라인 상태예요 — 마지막으로 저장된 결과를 표시합니다.</string>
+    <string name="common_sample_data_badge">샘플 데이터</string>
+    <string name="common_sample_data_notice">현재 표시된 추첨 기록은 오프라인 테스트용 샘플 데이터이며 실제 EuroJackpot 결과가 아닙니다. 설정에서 API 키를 연결하면 실제 결과와 동기화됩니다.</string>
+
+    <string name="currency_label">통화</string>
+    <string name="currency_converted_format">≈ %1$s</string>
+    <string name="currency_unavailable">지금은 통화 변환을 이용할 수 없어요</string>
+
+    <string name="home_title">EUROJACKPOT</string>
+    <string name="home_next_draw">다음 추첨</string>
+    <string name="home_countdown_format">%1$d일 %2$02d시간 %3$02d분</string>
+    <string name="home_recent_result">최근 추첨 결과</string>
+    <string name="home_view_result">결과 보기</string>
+    <string name="home_generate_numbers">✨ 번호 생성</string>
+    <string name="home_section_my_numbers">내 번호</string>
+    <string name="home_section_statistics">통계</string>
+    <string name="home_section_recent_results">최근 결과</string>
+    <string name="home_no_saved_numbers">아직 저장된 번호가 없어요</string>
+    <string name="home_jackpot_label">다음 추첨 누적 당첨금</string>
+    <string name="home_refresh_result">최신 결과 새로고침</string>
+    <string name="home_jackpot_unavailable">잭팟 금액을 불러올 수 없어요</string>
+
+    <string name="generate_title">번호 생성</string>
+    <string name="generate_mode_label">생성 방식</string>
+    <string name="generate_games_label">생성 게임 수</string>
+    <string name="generate_button">생성하기</string>
+    <string name="generate_regenerate">다시 생성</string>
+    <string name="generate_save_all">전체 저장</string>
+    <string name="generate_share">공유</string>
+    <string name="generate_explain_title">이 번호가 나온 이유</string>
+    <string name="explain_overall_frequency">전체 출현 횟수: %1$d회</string>
+    <string name="explain_recent_30">최근 30회 중 출현: %1$d회</string>
+    <string name="explain_last_drawn">마지막 출현: %1$d회 전</string>
+    <string name="generate_coming_soon">추후 지원 예정</string>
+    <string name="generate_pro_locked">추후 업데이트에서 제공됩니다</string>
+
+    <string name="mode_random_title">무작위</string>
+    <string name="mode_random_desc">완전히 무작위로 조합을 생성합니다. 모든 유효한 조합의 당첨확률은 동일합니다.</string>
+    <string name="mode_balanced_title">균형</string>
+    <string name="mode_balanced_desc">과거 빈도로 가중치를 두지 않고, 1~50 구간과 홀/짝을 고르게 배분합니다.</string>
+    <string name="mode_hot_title">핫 넘버</string>
+    <string name="mode_hot_desc">과거 추첨에서 상대적으로 자주 나온 번호를 우선합니다.</string>
+    <string name="mode_cold_title">콜드 넘버</string>
+    <string name="mode_cold_desc">과거 추첨에서 상대적으로 적게, 또는 최근에 나오지 않은 번호를 우선합니다.</string>
+    <string name="mode_hot_cold_title">핫 + 콜드</string>
+    <string name="mode_hot_cold_desc">자주 나온 번호와 드물게 나온 번호를 함께 조합합니다.</string>
+    <string name="mode_statistical_mix_title">통계 조합</string>
+    <string name="mode_statistical_mix_desc">과거 데이터를 분석하여 번호 선택을 체계적으로 도와줍니다.</string>
+    <string name="mode_ai_mix_title">AI 믹스</string>
+    <string name="mode_ai_mix_desc">핫, 콜드, 최근 출현 빈도 점수를 하나의 가중치로 결합해 번호를 선택한 뒤, 연속된 번호나 홀짝 비율이 한쪽으로 치우친 조합은 걸러냅니다.</string>
+    <string name="mode_smart_coverage_title">스마트 커버리지</string>
+    <string name="mode_smart_coverage_desc">여러 게임 사이의 불필요한 번호 중복을 줄여 다양한 조합을 만들어줍니다.</string>
+    <string name="mode_avoid_popular_title">인기 조합 피하기</string>
+    <string name="mode_avoid_popular_desc">사람들이 직접 고를 때 상대적으로 덜 선택하는 번호와 모양을 우선합니다 — 예를 들어 날짜로 읽히는 숫자보다 32~50 구간을 더 선호합니다.</string>
+
+    <string name="generation_disclaimer">모든 EuroJackpot 조합의 당첨확률은 동일합니다. 이 기능은 번호 선택을 체계적으로 도와줄 뿐, 당첨확률을 높이거나 당첨번호를 예측하지 않습니다.</string>
+    <string name="hot_disclaimer">핫 넘버는 과거 출현 빈도를 기준으로 하며, 수학적으로 더 높은 당첨확률을 의미하지 않습니다.</string>
+    <string name="cold_disclaimer">콜드 넘버는 과거 출현 빈도를 기준으로 하며, 수학적으로 더 낮은 당첨확률을 의미하지 않습니다.</string>
+    <string name="ai_mix_disclaimer">AI 믹스는 통계 가중치와 규칙 기반 필터링을 결합한 것으로, 머신러닝을 사용하지 않고 결과를 예측하지도 않으며 당첨 확률을 높이지 않습니다.</string>
+    <string name="avoid_popular_disclaimer">인기 조합을 피한다고 해서 당첨확률이 바뀌지는 않습니다 — 모든 유효한 조합의 당첨확률은 동일합니다. 다만 당첨되었을 때 상금을 나눠 받게 될 가능성에는 영향을 줄 수 있습니다.</string>
+
+    <string name="generate_intensity_label">가중치 강도</string>
+    <string name="intensity_weak">약하게</string>
+    <string name="intensity_normal">보통</string>
+    <string name="intensity_strong">강하게</string>
+
+    <string name="stats_title">통계</string>
+    <string name="stats_frequency">출현 빈도</string>
+    <string name="stats_recent_frequency">최근 출현 빈도</string>
+    <string name="stats_recent_10">최근 10회</string>
+    <string name="stats_recent_30">최근 30회</string>
+    <string name="stats_recent_100">최근 100회</string>
+    <string name="stats_hot_numbers">핫 넘버</string>
+    <string name="stats_cold_numbers">콜드 넘버</string>
+    <string name="stats_number_pairs">번호 페어</string>
+    <string name="stats_number_gaps">번호 갭</string>
+    <string name="stats_gap_desc">마지막 출현 이후 지난 추첨 횟수</string>
+    <string name="stats_odd_even">홀 / 짝</string>
+    <string name="stats_distribution">번호 구간 분포</string>
+    <string name="stats_sum_distribution">합계 분포</string>
+    <string name="stats_based_on">%1$d회 추첨 기준</string>
+    <string name="stats_empty">통계를 계산하기에 추첨 기록이 충분하지 않아요.</string>
+
+    <string name="my_numbers_title">내 번호</string>
+    <string name="my_numbers_add">번호 추가</string>
+    <string name="my_numbers_empty">아직 저장된 번호가 없어요. 번호를 생성하거나 직접 입력해 보세요.</string>
+    <string name="my_numbers_name_label">이름</string>
+    <string name="my_numbers_name_placeholder">예: 즐겨찾기, 생일 번호…</string>
+    <string name="my_numbers_note_label">메모 (선택)</string>
+    <string name="my_numbers_source_generated">생성됨</string>
+    <string name="my_numbers_source_manual">직접 입력</string>
+    <string name="my_numbers_active">활성</string>
+    <string name="my_numbers_inactive">비활성</string>
+    <string name="my_numbers_created_on">%1$s 저장</string>
+    <string name="my_numbers_delete_confirm_title">이 번호를 삭제할까요?</string>
+    <string name="my_numbers_delete_confirm_body">삭제 후에는 되돌릴 수 없어요.</string>
+    <string name="my_numbers_pick_main">메인 번호 5개 선택 (1~50)</string>
+    <string name="my_numbers_pick_euro">유로 번호 2개 선택 (1~12)</string>
+    <string name="my_numbers_validation_main_count">메인 번호를 정확히 5개 선택하세요.</string>
+    <string name="my_numbers_validation_euro_count">유로 번호를 정확히 2개 선택하세요.</string>
+    <string name="my_numbers_draw_date_label">추첨 회차 선택 (선택)</string>
+    <string name="my_numbers_round_input_label">회차 번호 직접 입력 (선택)</string>
+    <string name="my_numbers_round_input_placeholder">예: 26-038</string>
+    <string name="my_numbers_target_draw">%1$s 추첨</string>
+    <string name="my_numbers_round_label">%1$s 회차</string>
+    <string name="my_numbers_ticket_photo_label">구매 용지 사진 (선택)</string>
+    <string name="my_numbers_take_photo">사진 촬영</string>
+    <string name="my_numbers_choose_photo">갤러리에서 선택</string>
+    <string name="my_numbers_remove_photo">사진 삭제</string>
+    <string name="my_numbers_select">선택</string>
+    <string name="my_numbers_select_cancel">취소</string>
+    <string name="my_numbers_select_all">전체 선택</string>
+    <string name="my_numbers_select_none">선택 해제</string>
+    <string name="my_numbers_selected_count">%1$d개 선택됨</string>
+    <string name="my_numbers_delete_selected">선택 삭제</string>
+    <string name="my_numbers_bulk_delete_confirm_title">%1$d개 번호를 삭제할까요?</string>
+    <string name="my_numbers_bulk_delete_confirm_body">삭제 후에는 되돌릴 수 없어요.</string>
+
+    <string name="my_numbers_source_ocr">용지에서 스캔됨</string>
+    <string name="my_numbers_scan_from_camera">티켓 스캔</string>
+    <string name="my_numbers_scan_from_gallery">갤러리에서 스캔</string>
+    <string name="my_numbers_scan_review_title">스캔 결과 확인</string>
+    <string name="my_numbers_scanning">티켓 인식 중…</string>
+    <string name="my_numbers_scan_main_recognized">메인 번호를 인식했어요 — 아래에서 다시 확인해주세요</string>
+    <string name="my_numbers_scan_main_not_recognized">메인 번호를 인식하지 못했어요 — 아래에서 직접 선택해주세요</string>
+    <string name="my_numbers_scan_euro_recognized">유로 번호를 인식했어요 — 아래에서 다시 확인해주세요</string>
+    <string name="my_numbers_scan_euro_not_recognized">유로 번호를 인식하지 못했어요 — 아래에서 직접 선택해주세요</string>
+    <string name="my_numbers_scan_date_recognized_format">추첨일을 인식했어요: %1$s</string>
+    <string name="my_numbers_scan_date_not_recognized">추첨일을 인식하지 못했어요 — 아래에서 직접 선택해주세요</string>
+    <string name="my_numbers_scan_multiple_boards_warning">이 용지에는 조합이 %1$d개 있어요 — 아래에서 하나씩 전환해서 확인하고 저장할 수 있어요.</string>
+    <string name="my_numbers_scan_board_label">조합 %1$d</string>
+    <string name="my_numbers_save_and_next_board">저장하고 다음 조합 보기</string>
+    <string name="my_numbers_scan_failed">이 용지를 전혀 인식하지 못했어요. 아래에서 번호를 직접 선택해주세요.</string>
+    <string name="my_numbers_selected_draw_date">선택된 추첨: %1$s</string>
+
+    <string name="results_title">결과</string>
+    <string name="results_latest">최근 추첨</string>
+    <string name="results_view_winner_info">전체 공식 결과 보기 (외부 사이트)</string>
+    <string name="results_next_jackpot">다음 잭팟</string>
+    <string name="results_history">추첨 기록</string>
+    <string name="results_filter_year">연도</string>
+    <string name="results_check_my_numbers">내 번호 확인</string>
+    <string name="results_check_title">당첨 확인</string>
+    <string name="results_matched_main">메인 일치: %1$d개</string>
+    <string name="results_matched_euro">유로 일치: %1$d개</string>
+    <string name="results_no_prize">해당 등급의 당첨이 없어요</string>
+    <string name="results_prize_tier">당첨 등급: %1$s</string>
+    <!-- 내 번호가 당첨됐을 때 당첨금 표시 (LOTTO OpenAPI의 등수별 폴란드 지급 표, PrizeBreakdown.tierPrizeAmounts 참고) -->
+    <string name="results_prize_amount_native">당첨금: %1$s</string>
+    <string name="results_prize_amount_loading">당첨금 조회 중…</string>
+    <string name="results_prize_amount_unavailable">이번 회차 폴란드에서 이 등수 당첨자가 없어 정확한 당첨금을 알 수 없어요</string>
+    <string name="results_empty_history">저장된 추첨 기록이 없어요.</string>
+
+    <string name="results_country_breakdown_button">국가별 당첨자 수</string>
+    <string name="results_country_breakdown_title">국가별 당첨자 수</string>
+    <string name="results_country_breakdown_tier_label">%1$d + %2$d 일치</string>
+    <string name="results_country_breakdown_tier_fallback">%1$d등급</string>
+    <string name="results_country_breakdown_winner_count">%1$d명 당첨</string>
+    <string name="results_country_breakdown_loading">국가별 당첨 정보를 불러오는 중…</string>
+    <string name="results_country_breakdown_unavailable">지금은 이 추첨의 국가별 정보를 불러올 수 없어요.</string>
+    <string name="results_country_breakdown_empty">이 추첨에는 국가별로 나눌 잭팟 등급 당첨자가 없었어요.</string>
+    <string name="results_country_no_city_data">이 데이터 제공처는 도시 단위 당첨자 위치를 제공하지 않아요 — 국가별 합계만 확인할 수 있어서, 국가를 눌러도 도시까지는 볼 수 없어요.</string>
+
+    <string name="country_austria">오스트리아</string>
+    <string name="country_croatia">크로아티아</string>
+    <string name="country_denmark">덴마크</string>
+    <string name="country_estonia">에스토니아</string>
+    <string name="country_finland">핀란드</string>
+    <string name="country_germany">독일</string>
+    <string name="country_hungary">헝가리</string>
+    <string name="country_iceland">아이슬란드</string>
+    <string name="country_ireland">아일랜드</string>
+    <string name="country_italy">이탈리아</string>
+    <string name="country_latvia">라트비아</string>
+    <string name="country_lithuania">리투아니아</string>
+    <string name="country_netherlands">네덜란드</string>
+    <string name="country_norway">노르웨이</string>
+    <string name="country_poland">폴란드</string>
+    <string name="country_slovakia">슬로바키아</string>
+    <string name="country_slovenia">슬로베니아</string>
+    <string name="country_spain">스페인</string>
+    <string name="country_sweden">스웨덴</string>
+
+    <string name="onboarding_page1_title">EuroJackpot 결과 확인</string>
+    <string name="onboarding_page2_title">번호 통계 분석</string>
+    <string name="onboarding_page3_title">내 번호 생성하기</string>
+    <string name="onboarding_start">시작하기</string>
+
+    <string name="settings_title">설정</string>
+    <string name="settings_language">언어</string>
+    <string name="settings_dark_mode">다크 모드</string>
+    <string name="settings_notifications">알림</string>
+    <string name="settings_about">앱 정보</string>
+    <string name="settings_privacy_policy">개인정보 처리방침</string>
+    <string name="settings_terms">이용약관</string>
+</resources>

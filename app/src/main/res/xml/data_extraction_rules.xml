@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- No account credentials or sensitive data are stored (app requires no login),
+     so the default full-data cloud/device-transfer rules are fine as-is. -->
+<data-extraction-rules>
+    <cloud-backup>
+        <exclude domain="database" path="eurojackpot.db" />
+    </cloud-backup>
+    <device-transfer>
+        <include domain="database" path="eurojackpot.db" />
+    </device-transfer>
+</data-extraction-rules>

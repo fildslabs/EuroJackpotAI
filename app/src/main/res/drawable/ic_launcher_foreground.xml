@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Placeholder launcher glyph: a single gold "ball" referencing the app's number-ball
+     motif. Swap for a real designed icon (e.g. via Image Asset Studio) before release. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <path
+        android:fillColor="#F5B942"
+        android:pathData="M54,29m-25,0a25,25 0,1 1,50 0a25,25 0,1 1,-50 0" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M40,68 L68,68 L68,84 L40,84 Z"
+        android:fillAlpha="0.0" />
+</vector>

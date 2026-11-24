@@ -1,0 +1,12 @@
+# Copy this file to "local.properties" (which is git-ignored) and fill in real values.
+# Android Studio will also auto-write sdk.dir here the first time you open the project.
+
+sdk.dir=/path/to/your/Android/sdk
+
+# Free API key from Poland's official LOTTO OpenAPI (https://developers.lotto.pl) —
+# request one by emailing openapi@totalizator.pl (see the Swagger page's own
+# instructions), or via https://www.lotto.pl/kontakt.
+# Used by LottoOpenApiRemoteDataSource to fetch real EuroJackpot draw results.
+# Without this key the app still works fully offline using the bundled sample dataset
+# (clearly marked as sample data in Settings > About and in the Results screen).
+LOTTO_API_KEY=

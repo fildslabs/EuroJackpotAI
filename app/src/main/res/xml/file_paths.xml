@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Declares which of this app's own directories the FileProvider (see AndroidManifest.xml)
+     is allowed to hand out content:// Uris for. Scoped to just the one cache subdirectory
+     TicketPhotoStore.createScanCaptureUri writes full-resolution ticket-scan photos into —
+     nothing else in the app's storage is exposed this way. -->
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <cache-path name="ticket_scan_captures" path="ticket_scan_captures/" />
+</paths>

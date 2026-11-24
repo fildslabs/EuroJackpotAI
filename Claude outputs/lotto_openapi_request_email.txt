@@ -1,0 +1,24 @@
+받는 사람: api@lotto.pl
+제목: Prośba o dostęp do LOTTO OpenAPI (Eurojackpot)
+
+Dzień dobry,
+
+Piszę z prośbą o udostępnienie dostępu do usługi LOTTO OpenAPI.
+
+Imię: [이름]
+Nazwisko: [성]
+Nazwa firmy: [회사명 - 없으면 이 줄 삭제]
+Adres email: [이메일 주소]
+Numer telefonu: [전화번호]
+
+Buduję prywatną aplikację mobilną (Android) do celów niekomercyjnych/hobbystycznych,
+która wyświetla wyniki losowań Eurojackpot oraz wysokość kumulacji. Chciał(a)bym
+uzyskać dostęp do endpointów związanych z grą Eurojackpot, w szczególności:
+- wyniki losowań (draw-results),
+- informacje o kumulacji (game-jackpot, next-draw),
+- (opcjonalnie) informacje o wygranych/nagrodach (draw-prizes).
+
+Będę wdzięczny(a) za wygenerowanie klucza API.
+
+Z poważaniem,
+[이름 성]

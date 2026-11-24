@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App identity — kept as a single resource so the name can change later without touching code. -->
+    <string name="app_name">EuroJackpot AI</string>
+
+    <!-- Bottom navigation -->
+    <string name="nav_home">Home</string>
+    <string name="nav_generate">Generate</string>
+    <string name="nav_statistics">Statistics</string>
+    <string name="nav_my_numbers">My Numbers</string>
+    <string name="nav_results">Results</string>
+
+    <!-- Common -->
+    <string name="common_main_numbers">Main</string>
+    <string name="common_euro_numbers">Euro</string>
+    <string name="common_last_updated">Last updated: %1$s</string>
+    <string name="common_retry">Retry</string>
+    <string name="common_save">Save</string>
+    <string name="common_cancel">Cancel</string>
+    <string name="common_delete">Delete</string>
+    <string name="common_edit">Edit</string>
+    <string name="common_close">Close</string>
+    <string name="common_loading">Loading…</string>
+    <string name="common_error_generic">Something went wrong. Your saved data is safe.</string>
+    <string name="common_offline_notice">You\'re offline — showing the last saved results.</string>
+    <string name="common_sample_data_badge">SAMPLE DATA</string>
+    <string name="common_sample_data_notice">This draw history is bundled sample data for offline testing, not real EuroJackpot results. Connect an API key in Settings to sync real results.</string>
+
+    <!-- Currency conversion — jackpot/prize amounts come from LOTTO OpenAPI in PLN;
+         these let the user pick what currency to also see them converted to. -->
+    <string name="currency_label">Currency</string>
+    <string name="currency_converted_format">≈ %1$s</string>
+    <string name="currency_unavailable">Currency conversion unavailable right now</string>
+
+    <!-- Home -->
+    <string name="home_title">EUROJACKPOT</string>
+    <string name="home_next_draw">Next Draw</string>
+    <string name="home_countdown_format">%1$dd %2$02dh %3$02dm</string>
+    <string name="home_recent_result">Most recent draw</string>
+    <string name="home_view_result">View Result</string>
+    <string name="home_generate_numbers">✨ Generate Numbers</string>
+    <string name="home_section_my_numbers">My Numbers</string>
+    <string name="home_section_statistics">Statistics</string>
+    <string name="home_section_recent_results">Recent Results</string>
+    <string name="home_no_saved_numbers">No saved numbers yet</string>
+    <string name="home_jackpot_label">Next Draw Jackpot</string>
+    <string name="home_refresh_result">Refresh latest result</string>
+    <string name="home_jackpot_unavailable">Jackpot amount unavailable</string>
+
+    <!-- Generate -->
+    <string name="generate_title">Generate Numbers</string>
+    <string name="generate_mode_label">Generation Mode</string>
+    <string name="generate_games_label">Number of Games</string>
+    <string name="generate_button">Generate</string>
+    <string name="generate_regenerate">Regenerate</string>
+    <string name="generate_save_all">Save All</string>
+    <string name="generate_share">Share</string>
+    <string name="generate_explain_title">Why these numbers?</string>
+    <string name="explain_overall_frequency">Overall frequency: %1$d</string>
+    <string name="explain_recent_30">Recent 30 draws: %1$d</string>
+    <string name="explain_last_drawn">Last drawn: %1$d draws ago</string>
+    <string name="generate_coming_soon">Coming soon</string>
+    <string name="generate_pro_locked">Available in a future update</string>
+
+    <string name="mode_random_title">Random</string>
+    <string name="mode_random_desc">A completely random combination. Every valid combination has exactly the same odds.</string>
+    <string name="mode_balanced_title">Balanced</string>
+    <string name="mode_balanced_desc">Numbers are spread across the 1–50 range and mix odd/even values, without weighting by past frequency.</string>
+    <string name="mode_hot_title">Hot Numbers</string>
+    <string name="mode_hot_desc">Favors numbers that have appeared more often in past draws.</string>
+    <string name="mode_cold_title">Cold Numbers</string>
+    <string name="mode_cold_desc">Favors numbers that have appeared less often, or not recently, in past draws.</string>
+    <string name="mode_hot_cold_title">Hot + Cold</string>
+    <string name="mode_hot_cold_desc">Mixes frequently and rarely drawn numbers into the same combination.</string>
+    <string name="mode_statistical_mix_title">Statistical Mix</string>
+    <string name="mode_statistical_mix_desc">Historical statistics and balanced number distribution are used to create combinations.</string>
+    <string name="mode_ai_mix_title">AI Mix</string>
+    <string name="mode_ai_mix_desc">Combines hot, cold, and recent-frequency scores into a single weighted pick, then filters out oddly-shaped combinations such as all-consecutive numbers or a lopsided odd/even split.</string>
+    <string name="mode_smart_coverage_title">Smart Coverage</string>
+    <string name="mode_smart_coverage_desc">Smart Coverage creates diverse combinations to reduce unnecessary overlap between your selected games.</string>
+    <string name="mode_avoid_popular_title">Avoid Popular Picks</string>
+    <string name="mode_avoid_popular_desc">Leans toward numbers and shapes that hand-picked combinations use less often — for example, favoring 32–50 over numbers that can read as a calendar date.</string>
+
+    <string name="generation_disclaimer">All EuroJackpot combinations have exactly the same probability of winning. This tool helps you organize number selection systematically — it does not increase your chances of winning or predict winning numbers.</string>
+    <string name="hot_disclaimer">Hot numbers are based on historical frequency and do not have a higher mathematical probability of being drawn.</string>
+    <string name="cold_disclaimer">Cold numbers are based on historical frequency and do not have a lower mathematical probability of being drawn.</string>
+    <string name="ai_mix_disclaimer">AI Mix blends statistical weighting with rule-based filtering. It does not use machine learning, does not predict outcomes, and does not increase your chances of winning.</string>
+    <string name="avoid_popular_disclaimer">Avoiding popular picks does not change your odds of winning — every valid combination is equally likely. It can only affect how a jackpot might be shared if you do win.</string>
+
+    <string name="generate_intensity_label">Weighting Strength</string>
+    <string name="intensity_weak">Weak</string>
+    <string name="intensity_normal">Normal</string>
+    <string name="intensity_strong">Strong</string>
+
+    <!-- Statistics -->
+    <string name="stats_title">Statistics</string>
+    <string name="stats_frequency">Frequency</string>
+    <string name="stats_recent_frequency">Recent Frequency</string>
+    <string name="stats_recent_10">Last 10</string>
+    <string name="stats_recent_30">Last 30</string>
+    <string name="stats_recent_100">Last 100</string>
+    <string name="stats_hot_numbers">Hot Numbers</string>
+    <string name="stats_cold_numbers">Cold Numbers</string>
+    <string name="stats_number_pairs">Number Pairs</string>
+    <string name="stats_number_gaps">Number Gaps</string>
+    <string name="stats_gap_desc">Draws since a number last appeared</string>
+    <string name="stats_odd_even">Odd / Even</string>
+    <string name="stats_distribution">Number Distribution</string>
+    <string name="stats_sum_distribution">Sum Distribution</string>
+    <string name="stats_based_on">Based on %1$d draws</string>
+    <string name="stats_empty">Not enough draw history yet to compute statistics.</string>
+
+    <!-- My Numbers -->
+    <string name="my_numbers_title">My Numbers</string>
+    <string name="my_numbers_add">Add Numbers</string>
+    <string name="my_numbers_empty">You haven\'t saved any numbers yet. Generate or enter a combination to get started.</string>
+    <string name="my_numbers_name_label">Name</string>
+    <string name="my_numbers_name_placeholder">e.g. Favorite, Birthday numbers…</string>
+    <string name="my_numbers_note_label">Note (optional)</string>
+    <string name="my_numbers_source_generated">Generated</string>
+    <string name="my_numbers_source_manual">Manual entry</string>
+    <string name="my_numbers_active">Active</string>
+    <string name="my_numbers_inactive">Inactive</string>
+    <string name="my_numbers_created_on">Saved %1$s</string>
+    <string name="my_numbers_delete_confirm_title">Delete this combination?</string>
+    <string name="my_numbers_delete_confirm_body">This can\'t be undone.</string>
+    <string name="my_numbers_pick_main">Choose 5 main numbers (1–50)</string>
+    <string name="my_numbers_pick_euro">Choose 2 Euro numbers (1–12)</string>
+    <string name="my_numbers_validation_main_count">Select exactly 5 main numbers.</string>
+    <string name="my_numbers_validation_euro_count">Select exactly 2 Euro numbers.</string>
+    <string name="my_numbers_draw_date_label">Target draw (optional)</string>
+    <string name="my_numbers_round_input_label">Round number (optional)</string>
+    <string name="my_numbers_round_input_placeholder">e.g. 26-038</string>
+    <string name="my_numbers_target_draw">Draw %1$s</string>
+    <string name="my_numbers_round_label">Round %1$s</string>
+    <string name="my_numbers_ticket_photo_label">Ticket photo (optional)</string>
+    <string name="my_numbers_take_photo">Take Photo</string>
+    <string name="my_numbers_choose_photo">Choose from Gallery</string>
+    <string name="my_numbers_remove_photo">Remove photo</string>
+    <string name="my_numbers_select">Select</string>
+    <string name="my_numbers_select_cancel">Cancel</string>
+    <string name="my_numbers_select_all">Select All</string>
+    <string name="my_numbers_select_none">Clear</string>
+    <string name="my_numbers_selected_count">%1$d selected</string>
+    <string name="my_numbers_delete_selected">Delete Selected</string>
+    <string name="my_numbers_bulk_delete_confirm_title">Delete %1$d combinations?</string>
+    <string name="my_numbers_bulk_delete_confirm_body">This can\'t be undone.</string>
+
+    <!-- Ticket scanning ("Scan Ticket") — reads numbers/draw date off a photographed
+         EuroJackpot Poland (Totalizator Sportowy) paper ticket via on-device OCR. See
+         ParseTicketTextUseCase for what this can and can\'t reliably read. -->
+    <string name="my_numbers_source_ocr">Scanned from ticket</string>
+    <string name="my_numbers_scan_from_camera">Scan Ticket</string>
+    <string name="my_numbers_scan_from_gallery">Scan from Gallery</string>
+    <string name="my_numbers_scan_review_title">Review Scanned Ticket</string>
+    <string name="my_numbers_scanning">Reading ticket…</string>
+    <string name="my_numbers_scan_main_recognized">Main numbers recognized — double-check below</string>
+    <string name="my_numbers_scan_main_not_recognized">Couldn\'t read the main numbers — please select them below</string>
+    <string name="my_numbers_scan_euro_recognized">Euro numbers recognized — double-check below</string>
+    <string name="my_numbers_scan_euro_not_recognized">Couldn\'t read the Euro numbers — please select them below</string>
+    <string name="my_numbers_scan_date_recognized_format">Draw date recognized: %1$s</string>
+    <string name="my_numbers_scan_date_not_recognized">Couldn\'t read the draw date — please pick it below</string>
+    <string name="my_numbers_scan_multiple_boards_warning">This ticket has %1$d combinations — switch between them below to review and save each one.</string>
+    <string name="my_numbers_scan_board_label">Board %1$d</string>
+    <string name="my_numbers_save_and_next_board">Save &amp; Next Board</string>
+    <string name="my_numbers_scan_failed">Couldn\'t read this ticket at all. Please select the numbers manually below.</string>
+    <string name="my_numbers_selected_draw_date">Selected draw: %1$s</string>
+
+    <!-- Results -->
+    <string name="results_title">Results</string>
+    <string name="results_latest">Latest Draw</string>
+    <string name="results_view_winner_info">View Full Official Results (External Site)</string>
+    <string name="results_next_jackpot">Next Jackpot</string>
+    <string name="results_history">Draw History</string>
+    <string name="results_filter_year">Year</string>
+    <string name="results_check_my_numbers">Check My Numbers</string>
+    <string name="results_check_title">Result Check</string>
+    <string name="results_matched_main">Main matched: %1$d</string>
+    <string name="results_matched_euro">Euro matched: %1$d</string>
+    <string name="results_no_prize">No prize tier for this match</string>
+    <string name="results_prize_tier">Prize tier: %1$s</string>
+    <!-- Prize amount won for a matched saved number, from LOTTO OpenAPI's per-tier
+         Poland payout table (see PrizeBreakdown.tierPrizeAmounts) -->
+    <string name="results_prize_amount_native">You won: %1$s</string>
+    <string name="results_prize_amount_loading">Looking up the prize amount…</string>
+    <string name="results_prize_amount_unavailable">No winners recorded for this tier in Poland on this draw, so an exact amount isn\'t available</string>
+    <string name="results_empty_history">No draw history stored yet.</string>
+
+    <!-- Results: winners-by-country breakdown (LOTTO OpenAPI draw-prizes/eurojackpot) -->
+    <string name="results_country_breakdown_button">Winners by Country</string>
+    <string name="results_country_breakdown_title">Winners by Country</string>
+    <string name="results_country_breakdown_tier_label">%1$d + %2$d matches</string>
+    <string name="results_country_breakdown_tier_fallback">Tier %1$d</string>
+    <string name="results_country_breakdown_winner_count">%1$d winner(s)</string>
+    <string name="results_country_breakdown_loading">Loading country breakdown…</string>
+    <string name="results_country_breakdown_unavailable">Country breakdown isn\'t available for this draw right now.</string>
+    <string name="results_country_breakdown_empty">This draw had no jackpot-tier winners to break down by country.</string>
+    <string name="results_country_no_city_data">City-level winner locations aren\'t published by this data source — only country totals are available, so tapping a country can\'t show a city.</string>
+
+    <!-- EuroJackpot\'s 19 participating countries, as reported (in Polish) by
+         LOTTO OpenAPI\'s draw-prizes/eurojackpot endpoint — see EuroJackpotCountry.kt -->
+    <string name="country_austria">Austria</string>
+    <string name="country_croatia">Croatia</string>
+    <string name="country_denmark">Denmark</string>
+    <string name="country_estonia">Estonia</string>
+    <string name="country_finland">Finland</string>
+    <string name="country_germany">Germany</string>
+    <string name="country_hungary">Hungary</string>
+    <string name="country_iceland">Iceland</string>
+    <string name="country_ireland">Ireland</string>
+    <string name="country_italy">Italy</string>
+    <string name="country_latvia">Latvia</string>
+    <string name="country_lithuania">Lithuania</string>
+    <string name="country_netherlands">Netherlands</string>
+    <string name="country_norway">Norway</string>
+    <string name="country_poland">Poland</string>
+    <string name="country_slovakia">Slovakia</string>
+    <string name="country_slovenia">Slovenia</string>
+    <string name="country_spain">Spain</string>
+    <string name="country_sweden">Sweden</string>
+
+    <!-- Onboarding (structure only in this phase) -->
+    <string name="onboarding_page1_title">EuroJackpot Results</string>
+    <string name="onboarding_page2_title">Analyze Numbers</string>
+    <string name="onboarding_page3_title">Generate Your Picks</string>
+    <string name="onboarding_start">Start</string>
+
+    <!-- Settings (menu present, most items are placeholders in this phase) -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_language">Language</string>
+    <string name="settings_dark_mode">Dark Mode</string>
+    <string name="settings_notifications">Notifications</string>
+    <string name="settings_about">About</string>
+    <string name="settings_privacy_policy">Privacy Policy</string>
+    <string name="settings_terms">Terms</string>
+</resources>

@@ -34,6 +34,7 @@ jobs:
       # sdkmanager on PATH, so we just accept the licenses and install what we need directly.
       - name: Accept Android SDK licenses & install required packages (compileSdk 36)
         run: |
+          export PATH="$PATH:$ANDROID_HOME/cmdline-tools/latest/bin:$ANDROID_HOME/platform-tools"
           yes | sdkmanager --licenses || true
           sdkmanager "platforms;android-36" "build-tools;36.0.0"
 

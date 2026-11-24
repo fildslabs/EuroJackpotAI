@@ -28,11 +28,14 @@ jobs:
           distribution: temurin
           java-version: '21'
 
-      - name: Set up Android SDK
-        uses: android-actions/setup-android@v3
-
-      - name: Install required SDK packages (compileSdk 36)
-        run: sdkmanager "platforms;android-36" "build-tools;36.0.0"
+      # android-actions/setup-android@v3 is skipped: it tries to (re-)install the legacy
+      # "tools" package, which no longer exists in the SDK repository, and fails the job
+      # with exit code 1. ubuntu-latest runners already ship a recent Android SDK with
+      # sdkmanager on PATH, so we just accept the licenses and install what we need directly.
+      - name: Accept Android SDK licenses & install required packages (compileSdk 36)
+        run: |
+          yes | sdkmanager --licenses || true
+          sdkmanager "platforms;android-36" "build-tools;36.0.0"
 
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
